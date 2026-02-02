@@ -1,0 +1,15 @@
+#include<stdio.h>
+long convert(long h, long m, long s);
+int main(){
+    long h,m,s;
+    scanf("%ld %ld %ld",&h,&m,&s);
+    printf("%ld",convert(h,m,s));
+}
+
+long convert(long h, long m, long s){
+long ch,cm,sum_s;
+ch=h*3600;
+cm=m*60;
+sum_s=cm+ch+s;
+return sum_s;
+}
